@@ -32,25 +32,43 @@ path {
 </style>
 <head>
 	<!-- This is a crime against the software engineering gods. Load this asynchronously when it is hosted on a server instead. -->
-   <script src="data/us-congress-113.json"></script>
-   <script src="data/us.json"></script>
-   <!-- Main CSS stylesheet -->
-   <link rel="stylesheet" href="main.css">
-
+   	<script src="data/us-congress-113.json"></script>
+   	<script src="data/us.json"></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://d3js.org/queue.v1.min.js"></script>
+	<script src="https://d3js.org/topojson.v1.min.js"></script>
+   	<!-- Main CSS stylesheet -->
+   	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<h1> Climate Cabinet Scores </h1>
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="https://d3js.org/queue.v1.min.js"></script>
-<script src="https://d3js.org/topojson.v1.min.js"></script>
-<script src="map.js"></script>
-<div class="floating-card" id="floating-card" style="visibility: hidden;">
-	<p>Candidate Name</p>
-	<p>Climbate Cabinet Ranking</p>
-	<p>Action Needed</p>
-	<p>District info</p>
-	<p>Quote</p>
-    <p>Quote</p>
-</div>
+	<div class="navbar">
+		<p>Climate Cabinet Action Fund</p>
+	</div>
+	<h1 class="map-title"> Top 20 Climate Targets in 2020 </h1>
+	<p class="map-subtitle"> Donate to these candidates to maximize your climate impact </p>
+	<p class="map-subtitle"> Or donate here to give to all candidates at once </p>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://d3js.org/queue.v1.min.js"></script>
+	<script src="https://d3js.org/topojson.v1.min.js"></script>
+	<script src="map.js"></script>
+	<div class="floating-card" id="floating-card" style="visibility: hidden;">
+		<p>Candidate Name</p>
+		<p>Climbate Cabinet Ranking</p>
+		<p>Action Needed</p>
+		<p>District info</p>
+		<p>Quote</p>
+	    <p>Quote</p>
+	</div>
+	<br>
+	<br>
+	<div class="faq">
+		<br>
+		<h1> Frequently Asked Questions </h1>
+		<p> Q1 </p>
+		<p> A1 </p>
+		<p> Q2 </p>
+		<p> A2 </p>
+	</div>
 
-</script>
+	</script>
+</body>

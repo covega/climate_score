@@ -2,7 +2,7 @@
 	position: relative;
 	z-index: 1;
 	width: 20%;
-	height: 600px;
+	height: 586px;
 	background: white;
 	border-width: 2px;
 	border-color: orange;
@@ -15,4 +15,21 @@
 	position: relative;
  	z-index: 0;
  	float: left;
+}
+
+.navbar {
+
+}
+
+.map-title {
+	text-align: center
+}
+
+.map-subtitle {
+	text-align: center;
+}
+
+.faq {
+	text-align: center;
+	display: block;
 }
