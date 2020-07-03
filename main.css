@@ -1,6 +1,5 @@
 .floating-card {
 	position: relative;
-	z-index: 1;
 	width: 20%;
 	height: 586px;
 	background: white;
@@ -12,9 +11,7 @@
 }
 
 .map {
-	position: relative;
- 	z-index: 0;
- 	float: left;
+
 }
 
 .navbar {
@@ -32,4 +29,11 @@
 .faq {
 	text-align: center;
 	display: block;
+}
+
+.map-div{
+	height: 600px;
+	width: 100%;
+	position: relative;
+ 	float: left;
 }
