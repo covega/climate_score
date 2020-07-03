@@ -11,7 +11,7 @@ var path = d3.geo.path()
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height).attr("class", "map");
 
 // Can we use this data? Snagged from mbostocks site, looks like it's open source.
 // We should host it on webiste and make an async request instead of bloating the whole site.

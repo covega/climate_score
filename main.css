@@ -1,8 +1,18 @@
 .floating-card {
 	position: relative;
-	width: 100%;
-	height: 100%;
+	z-index: 1;
+	width: 20%;
+	height: 600px;
 	background: white;
-	border-width: 1px;
+	border-width: 2px;
 	border-color: orange;
+	border-style: solid;
+	float: right;
+	padding: 5px;
+}
+
+.map {
+	position: relative;
+ 	z-index: 0;
+ 	float: left;
 }
