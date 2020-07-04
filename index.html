@@ -36,7 +36,7 @@ path {
    	<script src="data/us.json"></script>
 	<script src="https://d3js.org/d3.v3.min.js"></script>
 	<script src="https://d3js.org/queue.v1.min.js"></script>
-	<script src="https://d3js.org/topojson.v1.min.js"></script>
+	<script src="https://d3js.org/topojson.v1.min.js"></script>	
    	<!-- Main CSS stylesheet -->
    	<link rel="stylesheet" href="main.css">
 </head>
@@ -49,9 +49,11 @@ path {
 	<h1 class="map-title"> Top 20 Climate Targets in 2020 </h1>
 	<p class="map-subtitle"> Donate to these candidates to maximize your climate impact </p>
 	<p class="map-subtitle"> Or donate here to give to all candidates at once </p>
-	<script src="https://d3js.org/d3.v3.min.js"></script>
-	<script src="https://d3js.org/queue.v1.min.js"></script>
-	<script src="https://d3js.org/topojson.v1.min.js"></script>
+	<div class = "map-list-selector">
+		<p> warning work in progress these buttons don't work yet </p>
+		<button>Map View</button>
+		<button>List View</button>		
+	</div>
 	<div class = "map-div">
 		<div class="floating-card" id="floating-card">
 			<p id="start"> Click on a district to get started! </p>
@@ -61,11 +63,15 @@ path {
 	<br>
 	<div class="faq">
 		<br>
-		<h1> Frequently Asked Questions </h1>
-		<p> Q1 </p>
-		<p> A1 </p>
-		<p> Q2 </p>
-		<p> A2 </p>
+		<h1> Frequently Asked Questions </h1>\
+	    <p><b>Is This What The Webiste Will Look Like? </b></p>
+	    <p> NO! This is basically just a barebones mock - you can barely even call this a wireframe! It isn't even a design we're settled on yet - just one idea!</p>
+	    <p><b>Is This Using the Right Data? </b></p>
+	    <p> No! This is congressional districts! </b>
+		<p><b>Is Climate Cabinet the Greates Climate Organization in the world? </b></p>
+		<p> We certainly think so! </p>
+		<p><b> Should I donate to the above races?</b> </p>
+		<p> Yes!! That's why we put this whole thing together!!! </p>
 	</div>
 
 	<script src="map.js"></script>

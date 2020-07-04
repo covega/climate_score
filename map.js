@@ -1,4 +1,3 @@
-console.log("running");
 var width = 960,
     height = 600;
 
