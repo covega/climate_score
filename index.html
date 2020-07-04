@@ -42,7 +42,9 @@ path {
 </head>
 <body>
 	<div class="navbar">
-		<p>Climate Cabinet Action Fund</p>
+		<a class="navbar navbar-logo">Climate Cabinet Action Fund</a>
+		<a class="navbar navbar-link" href="https://www.climatecabinet.org">Home</a>
+		<a class="navbar navbar-link">Donate</a>
 	</div>
 	<h1 class="map-title"> Top 20 Climate Targets in 2020 </h1>
 	<p class="map-subtitle"> Donate to these candidates to maximize your climate impact </p>
@@ -51,13 +53,8 @@ path {
 	<script src="https://d3js.org/queue.v1.min.js"></script>
 	<script src="https://d3js.org/topojson.v1.min.js"></script>
 	<div class = "map-div">
-		<div class="floating-card" id="floating-card" style="visibility: hidden;">
-			<p>Candidate Name</p>
-			<p>Climbate Cabinet Ranking</p>
-			<p>Action Needed</p>
-			<p>District info</p>
-			<p>Quote</p>
-	    	<p>Quote</p>
+		<div class="floating-card" id="floating-card">
+			<p id="start"> Click on a district to get started! </p>
 		</div>
 	</div>
 	<br>

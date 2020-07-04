@@ -62,25 +62,54 @@ svg.append("path")
 
 d3.select(self.frameElement).style("height", height + "px");
 
+function toggleVisibility(element){
+  if (element.style.visibility == "visible") {
+    element.style.visibility='hidden';
+  } else {
+    element.style.visibility='visible';
+  }
+}
+
 // Maybe we should be using display: none? https://www.w3schools.com/css/css_display_visibility.asp
 // Register this as an onclick for any of the districts
-function OnClickDistrict() {
+function onClickDistrict() {
   // TODO - make this populate with per district info instead of generic
   var card = document.getElementById("floating-card");
-  // This just toggles - we really want each district to be tied to a particular card. Maybe we can
-  // generate all cards on a per district basis, have this function turn every other cards visibility off
-  // and a specific cards visibility on?
-  console.log(card.style);
-  if (card.style.visibility == "visible") {
-    card.style.visibility='hidden';
-  } else {
-    card.style.visibility='visible';
+
+  var start_text = document.getElementById("start");
+  if (start_text) {
+    card.removeChild(start_text);
   }
+  // Remove the info if it exists
+  var candidate_info = document.getElementsByClassName("card-text");
+  while (candidate_info.length > 0) {
+    card.removeChild(candidate_info[0]);
+  }
+
+  var text_needed = ["Candidate Name:", "Climate Cabinet Ranking:", "Action Needed:", "District Info:", "Quote:"];
+
+  for (var i = 0; i < text_needed.length; ++i){
+    var text = text_needed[i];
+    var p_node = document.createElement("p");
+    var text_node = document.createTextNode(text);
+    p_node.className = "card-text"
+    p_node.appendChild(text_node);
+    card.appendChild(p_node);
+  }
+  // Now Append the info
+      // <p>Candidate Name</p>
+      // <p>Climbate Cabinet Ranking</p>
+      // <p>Action Needed</p>
+      // <p>District info</p>
+      // <p>Quote</p>
+      //   <p>Quote</p>  
+
+
 }
 
 // Get all districts with class ".district" and register this onclick
 var districts = document.getElementsByClassName("district");
 for (var i = 0; i < districts.length; ++i) {
   district = districts[i];
-  district.onclick = function() {OnClickDistrict()};
+  district.onclick = function() {onClickDistrict()};
 }
