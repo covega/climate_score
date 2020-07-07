@@ -6,6 +6,7 @@
 	border-style: solid;
 	float: right;
 	padding: 5px;
+	border-radius: 10px;
 }
 
 
@@ -43,6 +44,10 @@ path {
 	padding: 50px 50px;
 }
 
+.intro-text-block {
+	padding: 50px 50px;
+}
+
 .intro-text {
 	font-size: 24px;
 }
@@ -66,13 +71,6 @@ path {
 	border-radius: 10px;
 	border: none;
 
-}
-
-
-
-.navbar-link a:hover {
-  background-color: #bbb;
-  color: black;
 }
 
 .map-title {
