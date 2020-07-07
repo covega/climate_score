@@ -98,6 +98,16 @@ function drawMap() {
     .attr("d", path);
 
   d3.select(self.frameElement).style("height", height + "px");
+
+  // NOTE: Backwards from what you get in GoogleMaps (Aka, W / N instead of N/W)
+  // This is because we're using an Albers projection.
+  var sfPoint = projection([-122.390128, 37.790014]);
+  svg.append("circle")
+    .attr("cx", sfPoint[0])
+    .attr("cy", sfPoint[1])
+    .attr("r", 5)
+    .attr("fill", "orange")
+    .attr("class", "district-marker");
 }
 
 // Unused for now
