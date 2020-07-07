@@ -41,7 +41,7 @@ function onClickDistrict() {
 // TODO(jmorg): Use event listeners instead.
 function addOnClickToDistricts() {
   // Get all districts with class ".district" and register this onclick
-  var districts = document.getElementsByClassName("district");
+  var districts = document.getElementsByClassName("district-marker");
   for (var i = 0; i < districts.length; ++i) {
     district = districts[i];
     district.onclick = function() {onClickDistrict()};
@@ -105,7 +105,7 @@ function drawMap() {
   svg.append("circle")
     .attr("cx", sfPoint[0])
     .attr("cy", sfPoint[1])
-    .attr("r", 5)
+    .attr("r", 8)
     .attr("fill", "orange")
     .attr("class", "district-marker");
 }
